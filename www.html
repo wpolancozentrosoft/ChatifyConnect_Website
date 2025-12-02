@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1SS8Y0VM8P');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ChatifyConnect is the definitive WhatsApp messaging solution, built exclusively for Slate CRM. Embed two-way staff-to-student conversations directly within Slate workflows for instant, compliant communication at scale.">
+    <meta name="keywords" content="ChatifyConnect, WhatsApp, Slate CRM, student communication, messaging platform, higher education, admissions, enrollment, student success, WhatsApp Business API, Slate integration">
+    <meta name="author" content="ChatifyConnect">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.chatifyconnect.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.chatifyconnect.com/">
+    <meta property="og:title" content="ChatifyConnect - The Native WhatsApp Solution for Slate CRM">
+    <meta property="og:description" content="The definitive WhatsApp messaging solution, built exclusively for Slate CRM. Embed two-way staff-to-student conversations directly within Slate workflows for instant, compliant communication at scale.">
+    <meta property="og:image" content="https://www.chatifyconnect.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ChatifyConnect - WhatsApp Messaging for Slate CRM">
+    <meta property="og:site_name" content="ChatifyConnect">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.chatifyconnect.com/">
+    <meta name="twitter:title" content="ChatifyConnect - The Native WhatsApp Solution for Slate CRM">
+    <meta name="twitter:description" content="The definitive WhatsApp messaging solution, built exclusively for Slate CRM. Embed two-way staff-to-student conversations directly within Slate workflows.">
+    <meta name="twitter:image" content="https://www.chatifyconnect.com/images/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="ChatifyConnect - WhatsApp Messaging for Slate CRM">
+    <meta name="twitter:creator" content="@ChatifyConnect">
+    <meta name="twitter:site" content="@ChatifyConnect">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#064AAF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="ChatifyConnect">
+    
+    <title>ChatifyConnect - The Native WhatsApp Solution for Slate CRM</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-blue: #064AAF;
+            --accent-yellow: #FFD51B;
+            --accent-green: #91D725;
+            --accent-purple: #CA66DF;
+            --text-primary: #1a252f;
+            --text-secondary: #667781;
+            --bg-light: #f5f7fa;
+            --bg-white: #ffffff;
+            --bs-accent-3: #009565;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        .bg-primary {
+            background-color: var(--primary-blue) !important;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-blue);
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #053d8a;
+        }
+
+        /* Firefox scrollbar */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: var(--primary-blue) #f1f1f1;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 20px 0;
+            transition: all 0.3s ease;
+            background: var(--primary-blue);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar-brand img {
+            height: 36px;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9) !important;
+            margin: 0 15px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-yellow), var(--accent-green));
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover {
+            color: white !important;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .btn-primary-custom {
+            background-color: var(--bs-accent-3) !important; 
+            border-color: var(--bs-accent-3) !important;
+            color: #fff !important;
+            font-weight: bold !important;
+            padding: 12px 30px;
+            border-radius: 8px;
+            border: none;
+            transition: all 0.3s;
+        }
+        .btn-primary-custom:hover {
+            background-color: #007c52 !important; 
+            border-color: #007c52 !important;
+            color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 125, 82, 0.3);
+        }
+
+        .btn-nav-green {
+            background-color: var(--bs-accent-3) !important; 
+            border-color: var(--bs-accent-3) !important;
+            color: #fff !important;
+            font-weight: bold !important;
+        }
+        .btn-nav-green:hover {
+            background-color: #007c52 !important; 
+            border-color: #007c52 !important;
+            color: #fff !important;
+        }
+
+        .nav-link-underline:hover {
+            text-decoration: underline !important;
+        }
+
+        .transition {
+            transition: all 0.3s ease;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            padding: 80px 0 100px;
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            overflow: hidden;
+        }
+
+        .hero-bg-shape {
+            position: absolute;
+            top: -10%;
+            right: -5%;
+            width: 50%;
+            height: 120%;
+            background: linear-gradient(135deg, var(--accent-purple), var(--primary-blue));
+            opacity: 0.08;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: morph 8s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        .hero-bg-shape-2 {
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 40%;
+            height: 80%;
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-green));
+            opacity: 0.06;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: morph 10s ease-in-out infinite reverse;
+            z-index: 0;
+        }
+
+        @keyframes morph {
+            0% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+
+            50% {
+                border-radius: 30% 30% 70% 70% / 50% 30% 70% 60%;
+            }
+
+            100% {
+                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            line-height: 1.2;
+            margin-bottom: 20px;
+            background: #064aaf;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .hero-image-container {
+            position: relative;
+            z-index: 2;
+            perspective: 1000px;
+        }
+
+        .hero-mockup {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            transform: rotateY(-10deg) rotateX(5deg);
+            transition: transform 0.5s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .hero-mockup:hover {
+            transform: rotateY(0) rotateX(0);
+        }
+
+        /* Features Grid */
+        .features-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .section-title p {
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .feature-card {
+            padding: 40px 30px;
+            border-radius: 20px;
+            background: white;
+            border: 2px solid var(--bg-light);
+            transition: all 0.3s ease;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-yellow), var(--accent-green), var(--accent-purple));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .feature-icon.icon-blue {
+            background: rgba(6, 74, 175, 0.1);
+            color: var(--primary-blue);
+        }
+
+        .feature-icon.icon-yellow {
+            background: rgba(255, 213, 27, 0.1);
+            color: var(--accent-yellow);
+        }
+
+        .feature-icon.icon-green {
+            background: rgba(145, 215, 37, 0.1);
+            color: var(--accent-green);
+        }
+
+        .feature-icon.icon-purple {
+            background: rgba(202, 102, 223, 0.1);
+            color: var(--accent-purple);
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .feature-card h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Showcase Section */
+        .showcase-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .showcase-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(6, 74, 175, 0.03) 0%, rgba(145, 215, 37, 0.03) 100%);
+            z-index: 0;
+        }
+
+        .showcase-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .showcase-row {
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .showcase-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .showcase-content {
+            max-width: 100%;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .showcase-content h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+
+        .showcase-content p {
+            color: var(--text-secondary);
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-list li {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            transition: none;
+            border-left: 4px solid var(--accent-green);
+            padding-left: 25px;
+        }
+
+        .feature-list li:hover {
+            transform: none;
+            box-shadow: none;
+            border-left-color: var(--primary-blue);
+        }
+
+        .feature-list li i {
+            color: var(--accent-green);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .feature-list li:hover i {
+            color: var(--primary-blue);
+        }
+
+        .feature-list li strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .feature-list li span {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .feature-list-engagement {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .feature-list-engagement li {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(6, 74, 175, 0.05) 0%, rgba(145, 215, 37, 0.05) 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(6, 74, 175, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-list-engagement li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(6, 74, 175, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .feature-list-engagement li i {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-list-engagement li:hover i {
+            background: var(--primary-blue);
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .feature-list-engagement li strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .feature-list-engagement li span {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            display: block;
+        }
+
+        .feature-list-engagement li > div {
+            flex: 1;
+        }
+
+        @media (max-width: 768px) {
+            .feature-list {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .feature-list li {
+                padding-left: 20px;
+            }
+
+            .feature-list-engagement {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .feature-list-engagement li {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .feature-list-engagement li i {
+                margin: 0 auto;
+            }
+
+            .showcase-content {
+                padding: 30px 20px;
+            }
+
+            .showcase-content h3 {
+                font-size: 2rem;
+            }
+        }
+
+
+        /* Audience Section */
+        .audience-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .audience-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+            border: 2px solid var(--bg-light);
+        }
+
+        .audience-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .audience-header {
+            padding: 40px 30px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .audience-header.header-blue {
+            background: linear-gradient(135deg, var(--primary-blue), #053d8a);
+        }
+
+        .audience-header.header-green {
+            background: linear-gradient(135deg, var(--accent-green), #7bc01f);
+        }
+
+        .audience-header.header-yellow {
+            background: linear-gradient(135deg, var(--accent-yellow), #ffc107);
+            color: var(--text-primary);
+        }
+
+        .audience-header i {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .audience-header h4 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 1.35rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .audience-body {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .audience-body p {
+            color: var(--text-secondary);
+            margin: 0;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+
+        /* CTA Section */
+        .cta-section {
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 213, 27, 0.05), rgba(145, 215, 37, 0.05));
+            z-index: 0;
+        }
+
+        .cta-section > .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a252f;
+            color: white;
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            height: 40px;
+            margin-bottom: 25px;
+            filter: brightness(0) invert(1);
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .footer p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .footer h5 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 40px;
+            margin-top: 60px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="sticky-top z-3 bg-primary shadow-sm">
+        <nav class="container-fluid container-lg py-3 d-flex justify-content-between align-items-center">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+                <img src="images/ChatifyConnect_Logo.png" alt="ChatifyConnect Logo" style="height: 50px;">
+            </a>
+            
+            <button id="mobile-menu-button" class="d-md-none border-0 bg-transparent text-white" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-4"></i>
+            </button>
+
+            <div class="d-none d-md-flex align-items-center gap-4">
+                <a href="#features" class="text-white text-decoration-none nav-link-underline transition">Features</a>
+                <a href="#integration" class="text-white text-decoration-none nav-link-underline transition">Integration</a>                
+                <a href="#audience" class="text-white text-decoration-none nav-link-underline transition">Audience</a>
+                <a href="#engagement" class="text-white text-decoration-none nav-link-underline transition">Engagement</a>
+                <button type="button" class="btn btn-nav-green rounded-2 shadow-sm" style="padding: 12px 30px; font-size: 1.1rem;" data-bs-toggle="modal" data-bs-target="#demoModal">
+                    Book a Demo
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="d-md-none bg-primary px-4 pt-2 pb-3 border-top border-light border-opacity-25 d-none">
+            <div class="d-flex flex-column gap-2">
+                <a href="#features" class="text-white text-decoration-none py-2">Features</a>
+                <a href="#integration" class="text-white text-decoration-none py-2">Integration</a>
+                <a href="#audience" class="text-white text-decoration-none py-2">Audience</a>
+                <a href="#engagement" class="text-white text-decoration-none py-2">Engagement</a>
+                <div class="pt-3 d-flex flex-column gap-2">
+                    <button type="button" class="btn btn-nav-green btn-block rounded-2" data-bs-toggle="modal" data-bs-target="#demoModal">Book a Demo</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-shape"></div>
+        <div class="hero-bg-shape-2"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content fade-up">
+                    <h1 class="hero-title">The Native WhatsApp Messaging Solution for Slate CRM</h1>
+                    <p class="hero-subtitle">ChatifyConnect is the definitive WhatsApp messaging solution, built exclusively for Slate CRM. This comprehensive, cloud-based platform eliminates communication silos by embedding two-way staff-to-student conversations directly within Slate workflows.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button type="button" class="btn btn-nav-green rounded-2 shadow-sm" style="padding: 12px 30px; font-size: 1.1rem;" data-bs-toggle="modal" data-bs-target="#demoModal">Book a Demo</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 hero-image-container fade-up" style="transition-delay: 0.2s;">
+                    <div class="hero-mockup">
+                        <!-- CSS-only Mockup of the Interface -->
+                        <div
+                            style="background: #f0f2f5; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            <div
+                                style="background: #064aaf; padding: 15px; display: flex; align-items: center; gap: 10px;">
+                                <div style="width: 12px; height: 12px; background: #ff5f56; border-radius: 50%;"></div>
+                                <div style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%;"></div>
+                                <div style="width: 12px; height: 12px; background: #27c93f; border-radius: 50%;"></div>
+                            </div>
+                            <div class="d-flex" style="height: 350px;">
+                                <div
+                                    style="width: 100px; background: white; border-right: 1px solid #eee; padding: 10px;">
+                                    <div
+                                        style="width: 40px; height: 40px; background: #eee; border-radius: 50%; margin-bottom: 15px;">
+                                    </div>
+                                    <div
+                                        style="width: 100%; height: 8px; background: #f0f0f0; border-radius: 4px; margin-bottom: 8px;">
+                                    </div>
+                                    <div
+                                        style="width: 70%; height: 8px; background: #f0f0f0; border-radius: 4px; margin-bottom: 20px;">
+                                    </div>
+                                    <div
+                                        style="width: 40px; height: 40px; background: #e3f2fd; border-radius: 50%; margin-bottom: 15px;">
+                                    </div>
+                                    <div
+                                        style="width: 100%; height: 8px; background: #f0f0f0; border-radius: 4px; margin-bottom: 8px;">
+                                    </div>
+                                </div>
+                                <div
+                                    style="flex: 1; background: #ECE5DD; padding: 20px; display: flex; flex-direction: column;">
+                                    <div
+                                        style="background: white; padding: 10px 15px; border-radius: 10px 10px 10px 0; align-self: flex-start; max-width: 70%; margin-bottom: 15px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                        <div
+                                            style="width: 150px; height: 8px; background: #eee; border-radius: 4px; margin-bottom: 5px;">
+                                        </div>
+                                        <div style="width: 100px; height: 8px; background: #eee; border-radius: 4px;">
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="background: #DCF8C6; padding: 10px 15px; border-radius: 10px 10px 0 10px; align-self: flex-end; max-width: 70%; margin-bottom: 15px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                        <div
+                                            style="width: 180px; height: 8px; background: rgba(0,0,0,0.1); border-radius: 4px; margin-bottom: 5px;">
+                                        </div>
+                                        <div
+                                            style="width: 120px; height: 8px; background: rgba(0,0,0,0.1); border-radius: 4px;">
+                                        </div>
+                                    </div>
+                                    <div
+                                        style="background: white; padding: 10px 15px; border-radius: 10px 10px 10px 0; align-self: flex-start; max-width: 70%; margin-bottom: 15px; box-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                        <div style="display: flex; align-items: center; gap: 10px;">
+                                            <i class="bi bi-file-earmark-pdf text-danger"></i>
+                                            <span style="font-size: 12px; color: #666;">Orientation.pdf</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 80px; background: white; border-left: 1px solid #eee;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Core Features</h2>
+                <p>Everything you need to manage student communications effectively in one place. ChatifyConnect transforms Slate into a central, compliant hub for all student messaging, turning conversations into conversions.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-blue">
+                            <i class="bi bi-chat-dots-fill"></i>
+                        </div>
+                        <h3>Intuitive Real-Time Messenger in your CRM</h3>
+                        <p>A modern, two-way communication interface that centralizes all student conversations within Slate. Familiar WhatsApp UI minimizes training time, with complete threading and real-time status tracking.</p>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-green">
+                            <i class="bi bi-link-45deg"></i>
+                        </div>
+                        <h3>Seamless Slate CRM Integration</h3>
+                        <p>Deeply embedded in the Slate environment with integrated student directory, contextual messaging, unread indicators, and a personalization engine that automatically replaces dynamic variables.</p>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-yellow">
+                            <i class="bi bi-lightning-charge-fill"></i>
+                        </div>
+                        <h3>Scalable Template & Asset Management</h3>
+                        <p>Quick message library with dynamic variable support, drag-and-drop efficiency, and a centralized asset repository. Comprehensive admin tools for creating, editing, and organizing all templates and assets.</p>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-4 fade-up">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-purple">
+                            <i class="bi bi-shield-check-fill"></i>
+                        </div>
+                        <h3>WhatsApp Compliance & Validation</h3>
+                        <p>Maintain compliance with strict WhatsApp Business API policies through automated validation. Pre-send compliance checks, Content SID integration, and secure media handling ensure regulatory compliance.</p>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-blue">
+                            <i class="bi bi-person-badge"></i>
+                        </div>
+                        <h3>Student Record Dashboard & History</h3>
+                        <p>Dedicated person dashboard embedded in student records displaying complete, chronological history of all WhatsApp messages. Message detail visibility with direct access to full messenger interface.</p>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-md-6 col-lg-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-green">
+                            <i class="bi bi-bar-chart-fill"></i>
+                        </div>
+                        <h3>Administrative & Financial Management</h3>
+                        <p>Comprehensive dashboard with real-time statistics, credit management system with pay-per-message tracking, and robust audit & security features including role-based access control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Showcase -->
+    <section id="integration" class="showcase-section">
+        <div class="container">
+            <div class="row showcase-row fade-up">
+                <div class="col-12 showcase-content">
+                    <h3>Enterprise-Ready Compliance</h3>
+                    <p>Streamlining engagement workflows with essential administrative tools, including built-in credit management, automated template validation, and robust analytics. ChatifyConnect ensures communications are managed at scale while maintaining data integrity and compliance standards.</p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <strong>Comprehensive Dashboard</strong>
+                            <span>Real-time statistics on total students, users, messages sent/received, and unread message counts.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-wallet"></i>
+                            <strong>Credit Management System</strong>
+                            <span>Pay-per-message credit system with real-time display, usage history, and integrated request/redeem system.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-bell"></i>
+                            <strong>Automated Notifications</strong>
+                            <span>Daily staff recaps, email confirmations, and detailed analytics & reporting.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-shield-alt"></i>
+                            <strong>Audit & Security</strong>
+                            <span>Role-based access control, secure session management, full message logging, and data encryption.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section id="audience" class="audience-section">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Designed For HigherEd</h2>
+                <p>Tailored solutions for every team member. ChatifyConnect empowers Admissions, Enrollment, and Student Success teams to engage students instantly, compliantly, and at scale.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 fade-up">
+                    <div class="audience-card">
+                        <div class="audience-header header-blue">
+                            <i class="fas fa-university"></i>
+                            <h3>Admissions & Enrollment Staff</h3>
+                        </div>
+                        <div class="audience-body">
+                            <p>For prospecting and conversion communications. Engage prospective students with timely, personalized messages throughout the application cycle and deliver real-time assistance during high-volume enrollment periods.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.1s;">
+                    <div class="audience-card">
+                        <div class="audience-header header-green">
+                            <i class="fas fa-user-graduate"></i>
+                            <h3>Student Success & Advising Teams</h3>
+                        </div>
+                        <div class="audience-body">
+                            <p>For retention and ongoing student support. Maintain ongoing two-way communication to support current students and boost retention, ensuring students stay engaged throughout their academic journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
+                    <div class="audience-card">
+                        <div class="audience-header header-yellow">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Administrative & Technical Staff</h3>
+                        </div>
+                        <div class="audience-body">
+                            <p>For system configuration, maintenance, and compliance management. Ensure security and data integrity while managing templates, assets, and system-wide communication workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="engagement" class="showcase-section" style="background: white;">
+        <div class="container">
+            <div class="row showcase-row fade-up">
+                <div class="col-12 showcase-content">
+                    <h3>Enhanced Student Engagement</h3>
+                    <p>Leveraging students' preferred channel—WhatsApp—to facilitate real-time conversations, media sharing, and quick replies, dramatically increasing response rates and lowering communication friction.</p>
+                    <ul class="feature-list-engagement">
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <strong>Maximized Engagement</strong>
+                                <span>Reach students instantly on their preferred channel (WhatsApp), leading to higher response rates.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <strong>Operational Efficiency</strong>
+                                <span>Reduce response times dramatically using Quick Messages and the familiar, intuitive chat interface.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-link"></i>
+                            <div>
+                                <strong>Unified Workflow</strong>
+                                <span>Seamlessly integrate messaging into existing Slate workflows, eliminating the need for staff to switch between systems.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <strong>Predictable Cost</strong>
+                                <span>The credit-based system offers a transparent and cost-effective model for high-volume communication.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="fade-up">
+                <h2>Ready to Transform Your Student Communication?</h2>
+                <p>ChatifyConnect transforms Slate into a central, compliant hub for all student messaging, turning conversations into conversions. Join the institutions using ChatifyConnect to meet students where they are.</p>
+                <button type="button" class="btn btn-primary-custom btn-lg px-5" data-bs-toggle="modal" data-bs-target="#demoModal">Book a Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 mb-4 mb-lg-0 text-center">
+                    <img src="images/ChatifyConnect_Logo.png" alt="ChatifyConnect" class="footer-logo">
+                    <p style="max-width: 600px; margin-left: auto; margin-right: auto;">The definitive WhatsApp messaging solution, built exclusively for Slate CRM. Eliminate communication silos and engage students instantly, compliantly, and at scale.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>©2026 <a href="https://www.zentrosoft.com/" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Zentrosoft, LLC</a>. ChatifyConnect is a registered product of <a href="https://www.zentrosoft.com/" target="_blank" rel="noopener noreferrer" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Zentrosoft, LLC</a>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ChatifyConnect",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150"
+      },
+      "description": "The definitive WhatsApp messaging solution, built exclusively for Slate CRM. Embed two-way staff-to-student conversations directly within Slate workflows for instant, compliant communication at scale.",
+      "url": "https://www.chatifyconnect.com/",
+      "logo": "https://www.chatifyconnect.com/images/ChatifyConnect_Logo.png",
+      "screenshot": "https://www.chatifyconnect.com/images/og-image.jpg",
+      "featureList": [
+        "Real-Time Messaging Interface",
+        "Seamless Slate CRM Integration",
+        "Scalable Template & Asset Management",
+        "WhatsApp Compliance & Validation",
+        "Student Record Dashboard & History",
+        "Administrative & Financial Management"
+      ],
+      "provider": {
+        "@type": "Organization",
+        "name": "ChatifyConnect",
+        "url": "https://www.chatifyconnect.com/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ChatifyConnect",
+      "url": "https://www.chatifyconnect.com/",
+      "logo": "https://www.chatifyconnect.com/images/ChatifyConnect_Logo.png",
+      "description": "The definitive WhatsApp messaging solution, built exclusively for Slate CRM",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "Customer Service",
+        "email": "info@chatifyconnect.com"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/chatifyconnect",
+        "https://twitter.com/ChatifyConnect",
+        "https://www.facebook.com/ChatifyConnect"
+      ]
+    }
+    </script>
+
+    <!-- Demo Booking Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-label="Book a Demo Form" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0" style="height: 80vh;">
+                    <button type="button" class="btn-close position-absolute p-2 bg-light rounded-circle z-3" style="top: 15px; right: 15px;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <iframe width='100%' height='100%' src='https://formifyconnect.zohobookings.com/portal-embed#/4750167000000049052' frameborder='0' allowfullscreen='' ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Navbar Scroll Effect & Animation -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('d-none');
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    e.preventDefault();
+
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('d-none')) {
+                        mobileMenu.classList.add('d-none');
+                    }
+
+                    const headerHeight = document.querySelector('header').offsetHeight || 0;
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Close mobile menu when modal is triggered
+        document.querySelectorAll('#mobile-menu [data-bs-toggle="modal"]').forEach(button => {
+            button.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('d-none');
+            });
+        });
+
+        // Scroll Animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+
+</html>
