@@ -809,7 +809,7 @@ body {
 
 .start-free-badge {
     display: inline-block;
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--primary-blue);
     background: linear-gradient(135deg, rgba(255, 213, 27, 0.15), rgba(145, 215, 37, 0.15));
@@ -834,7 +834,7 @@ body {
 
 @media (max-width: 768px) {
     .start-free-badge {
-        font-size: 1.4rem;
+        font-size: .95rem;
         padding: 6px 12px;
     }
 }
