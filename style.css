@@ -122,7 +122,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    padding: 80px 0 100px;
+    padding: 50px 0 100px;
     background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
     overflow: hidden;
 }
@@ -494,6 +494,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 20px;
+    }
+
     .feature-list {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -713,5 +717,41 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* iOS: Keep blue background behind status bar while scrolling */
+@supports (-webkit-touch-callout: none) {
+    html,
+    body {
+        background-color: var(--primary-blue);
+    }
+    
+    /* Make header fixed and extend into safe area */
+    header.sticky-top {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1030;
+        background-color: var(--primary-blue) !important;
+        /* Extend header background into safe area */
+        padding-top: env(safe-area-inset-top);
+        margin-top: 0;
+    }
+    
+    /* Ensure header content has proper spacing from safe area */
+    header.sticky-top nav {
+        padding-top: max(12px, calc(12px + env(safe-area-inset-top) * 0.5));
+    }
+    
+    /* Add padding to body to account for fixed header height */
+    body {
+        padding-top: calc(76px + env(safe-area-inset-top));
+    }
+    
+    /* Ensure first section accounts for header */
+    .hero-section {
+        margin-top: 0;
+    }
 }
 
