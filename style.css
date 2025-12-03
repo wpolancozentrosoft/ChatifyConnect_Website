@@ -495,7 +495,7 @@ body {
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: 20px;
+        padding: 20px 0 40px;
     }
 
     .feature-list {
