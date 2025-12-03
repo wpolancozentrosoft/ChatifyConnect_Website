@@ -834,7 +834,7 @@ body {
 
 @media (max-width: 768px) {
     .start-free-badge {
-        font-size: 1.2rem;
+        font-size: .7rem;
         padding: 6px 12px;
     }
 }
