@@ -16,6 +16,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Keep blue behind iOS status bar / top area while scrolling */
+@supports (-webkit-touch-callout: none) {
+    html,
+    body {
+        background-color: var(--primary-blue);
+    }
+}
+
 .bg-primary {
     background-color: var(--primary-blue) !important;
 }
