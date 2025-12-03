@@ -700,6 +700,41 @@ body {
     font-size: 0.9rem;
 }
 
+/* Footer Contact Email */
+.footer-contact {
+    text-align: center;
+}
+
+.footer-email {
+    display: inline-flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footer-email i {
+    font-size: 1.1rem;
+    color: var(--accent-green);
+}
+
+.footer-email:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-email:hover i {
+    color: var(--accent-yellow);
+}
+
+@media (max-width: 768px) {
+    .footer-email {
+        font-size: 0.9rem;
+    }
+}
+
 /* Footer Video Link */
 .footer-video-link {
     margin-top: 20px;
